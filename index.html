@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signature Scents by Sophia</title>
+  <meta name="description" content="Discover affordable, long-lasting perfume oils and scent bundles from Signature Scents by Sophia." />
+  <meta name="theme-color" content="#f6f4ee" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement" role="status">A little luxury, made for every day <span aria-hidden="true">•</span> Nationwide delivery</div>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Signature Scents by Sophia">
+        Signature Scents
+        <span>by Sophia</span>
+      </a>
+      <button id="cart-button" class="cart-button" type="button" aria-label="Open shopping cart, 0 items">
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#combos" class="nav-link">Combos</a>
+        <a class="nav-contact nav-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        <div class="nav-actions" aria-label="Account actions">
+          <button id="account-button" class="account-btn" type="button">Account</button>
+          <button id="owner-button" class="account-btn secondary hidden" type="button">Owner panel</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="hero" id="home">
+    <div class="hero-content" tabindex="0">
+      <p class="eyebrow">FRAGRANCE, MADE PERSONAL</p>
+      <h1><span>Find your</span><br><em>signature</em> scent.</h1>
+      <p class="hero-copy">Feel-good fragrance, without the big price tag. Find the scent you reach for every day.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn" aria-label="Shop the collection">Shop the collection <span aria-hidden="true">↗</span></a>
+        <a href="#combos" class="text-link" aria-label="Explore scent sets">Explore scent sets</a>
+      </div>
+      <div class="hero-note"><span class="note-mark" aria-hidden="true">✳</span> Your next everyday favorite is here.</div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=900&q=85" alt="A glass perfume bottle arranged with fresh flowers" fetchpriority="high" loading="eager">
+      <div class="image-caption"><span>THE SOPHIA EDIT</span><span>01 / EVERYDAY LUXURY</span></div>
+    </div>
+    </section>
+
+  <section id="shop">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">THE COLLECTION</p>
+        <h2 class="section-title">Little bottle.<br><em>Big impression.</em></h2>
+      </div>
+      <p class="section-intro">Choose your size, find your rhythm, and make a little luxury part of every day.</p>
+    </div>
+    <div class="products-grid" id="products-grid" role="region" aria-label="Shop products" tabindex="0"></div>
+  </section>
+
+  <section id="combos">
+    <div class="section-heading combo-heading">
+      <div>
+        <p class="eyebrow">MADE TO GO TOGETHER</p>
+        <h2 class="section-title">The art of<br><em>the right pairing.</em></h2>
+      </div>
+      <p class="section-intro">A ready-made ritual for gifting, layering, or keeping your favorite close.</p>
+    </div>
+    <div class="combos-grid" id="combos-grid"></div>
+  </section>
+
+  <div class="trust">
+    <div class="trust-heading">
+      <p class="eyebrow">THE GOOD THINGS</p>
+      <h2>Fragrance to feel good in.</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span>⏱️</span>
+        <p>Long-Lasting<br>24hrs</p>
+      </div>
+      <div class="trust-item">
+        <span>✅</span>
+        <p>100% Quality<br>& Safe</p>
+      </div>
+      <div class="trust-item">
+        <span>🌿</span>
+        <p>Skin & Fabric<br>Friendly</p>
+      </div>
+      <div class="trust-item">
+        <span>🚚</span>
+        <p>Nationwide<br>Delivery</p>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer id="contact">
+    <p class="footer-brand">Signature Scents by Sophia</p>
+    <p>Luxury • Quality • Elegance</p>
+    <p class="footer-social">
+      Follow us on TikTok: 
+      <a href="https://www.tiktok.com/@signaturescentsbysophia" target="_blank" rel="noopener noreferrer">@signaturescents by Sophia</a>
+    </p>
+    <p class="footer-copyright">© 2026 Signature Scents by Sophia. All rights reserved.</p>
+  </footer>
+
+  <dialog class="product-dialog" aria-labelledby="detail-title">
+    <button class="dialog-close" type="button" aria-label="Close product details">×</button>
+    <div class="detail-image-wrap">
+      <img class="detail-image" src="" alt="">
+    </div>
+    <div class="detail-content">
+      <p class="eyebrow">SIGNATURE SCENTS</p>
+      <h2 id="detail-title"></h2>
+      <p class="detail-price"></p>
+      <p class="detail-description">Choose your preferred size and order directly from Sophia.</p>
+      <div class="size-picker">
+        <p class="detail-label">Choose a size</p>
+        <div class="size-options"></div>
+      </div>
+      <div class="quantity-picker">
+        <label class="detail-label" for="detail-quantity">Quantity</label>
+        <div class="quantity-control">
+          <button type="button" class="quantity-change" data-step="-1" aria-label="Decrease quantity">−</button>
+          <input id="detail-quantity" type="number" min="1" max="99" value="1" inputmode="numeric">
+          <button type="button" class="quantity-change" data-step="1" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <button class="detail-order order-btn" type="button">Add to cart</button>
+      <p class="detail-note">Delivery details can be confirmed when you order.</p>
+    </div>
+  </dialog>
+
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog-inner">
+      <button class="dialog-close cart-close" type="button" aria-label="Close shopping cart">×</button>
+      <p class="eyebrow">YOUR SELECTION</p>
+      <h2 id="cart-title">Shopping cart</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <span>Subtotal</span>
+        <strong id="cart-total">₦0</strong>
+      </div>
+      <button id="checkout-button" class="order-btn checkout-button" type="button">Send request on WhatsApp</button>
+      <p class="cart-note">Your order opens in WhatsApp, where you can review and send it to Sophia.</p>
+    </div>
+  </dialog>
+
+  <dialog id="auth-dialog" class="auth-dialog">
+    <div class="auth-dialog-inner">
+      <button class="dialog-close auth-close" type="button" aria-label="Close account form">×</button>
+      <div class="auth-panel">
+        <div class="auth-header">
+          <p class="eyebrow">YOUR ACCOUNT</p>
+          <h2>Sign in or create a profile</h2>
+        </div>
+
+        <div class="auth-grid">
+          <form id="login-form" class="auth-form">
+            <h3>Sign in</h3>
+            <label>
+              Email
+              <input type="email" name="loginEmail" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Password
+              <input type="password" name="loginPassword" placeholder="Password" required>
+            </label>
+            <button type="submit" class="btn">Login</button>
+          </form>
+
+          <form id="signup-form" class="auth-form">
+            <h3>Create account</h3>
+            <label>
+              Full name
+              <input type="text" name="signupName" placeholder="Your name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="signupEmail" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Password
+              <input type="password" name="signupPassword" placeholder="Create a password" required>
+            </label>
+            <button type="submit" class="btn secondary">Create account</button>
+          </form>
+        </div>
+
+        <div class="auth-bottom-row">
+          <button id="logout-button" type="button" class="btn secondary hidden">Log out</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="owner-dialog" class="owner-dialog">
+    <div class="owner-dialog-inner">
+      <button class="dialog-close owner-close" type="button" aria-label="Close owner panel">×</button>
+      <div class="owner-header">
+        <p class="eyebrow">OWNER PANEL</p>
+        <h2>Manage products</h2>
+      </div>
+
+      <form id="product-form" class="owner-form">
+        <div class="owner-form-grid">
+          <label>
+            Product name
+            <input type="text" id="product-name" placeholder="e.g. Rose Mist" required>
+          </label>
+          <label>
+            Price (₦)
+            <input type="number" id="product-price" min="0" step="100" placeholder="5000" required>
+          </label>
+          <label>
+            Discount (%)
+            <input type="number" id="product-discount" min="0" max="100" step="1" value="0">
+          </label>
+          <label>
+            Image URL or upload
+            <input type="url" id="product-image-url" placeholder="https://...">
+          </label>
+        </div>
+        <label class="upload-label">
+          Or upload a new product photo
+          <input type="file" id="product-image-upload" accept="image/*">
+        </label>
+        <img id="product-image-preview" class="product-image-preview" alt="Selected product preview" hidden>
+        <div class="owner-actions">
+          <button type="submit" class="btn">Save product</button>
+          <button type="button" id="reset-product-form" class="btn secondary">Reset</button>
+        </div>
+      </form>
+
+      <div class="owner-list-wrap">
+        <h3>Current products</h3>
+        <div id="owner-product-list" class="owner-product-list"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+</body>
+</html>
